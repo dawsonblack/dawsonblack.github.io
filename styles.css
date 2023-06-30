@@ -4,3 +4,8 @@ body h1 {
 section h2 {
     text-align: center;
   }
+  #about img {
+    float: right;
+    width: 200px;
+    margin-left: 20px;
+  }
