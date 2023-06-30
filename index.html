@@ -1,32 +1,75 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-    <style>
-    	.passColor {
-        	color:green
-        }
-        .failColor {
-        	color:red
-        }
-        .maybeColor {
-        	color:rgb(224, 207, 0);
-        }
-    </style>
-    <script>
-        function passed() {
-            document.body.innerHTML = "<span class='passColor'>You passed, congratulations!</span>";
-        }
-        function failed() {
-            document.body.innerHTML = "<span class='failColor'>YOU FAILED!!!!!!!</span>";
-        }
-        function maybe() {
-            document.body.innerHTML = "<span class='maybeColor'>Eh, who could've blamed you</span>";
-        }
-    </script>
+  <title>Dawson's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<button type="button", onClick = "passed()">Click Me!</button>
-<button type="button", onClick = "failed()">don't click me</button>
-<button type="button", onClick = "maybe()">Maybe click me?</button>
+  <header>
+    <nav>
+    <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <h1>Dawson Black</h1>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="put a profile photo here" alt="Dawson Black"> <!--Try to put this somewhere on the right-->
+    <p>Biography or catchphrase or something idk</p>
+    <h3>Contact information:</h3>
+    <ul>
+      <li>Phone: 330-310-9998</li> <!--see if there's some phone link for mobile or mac or something-->
+      <li>Email: dawsonblack0816@gmail.com</li> <!--See if you can add an email link-->
+      <li><a href="https://github.com/dawsonblack">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/dawson-black-624238281/">LinkedIn</a></li>
+    </ul>
+    <h3>Skills</h3>
+    <ul>
+      <li>Skill 1</li>
+      <li>Skill 2</li>
+      <li>Skill 3</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <article>
+      <h3>Nand2Tetris</h3>
+      <p>Starting with nothing but nand gates, I built a fully operational 16-bit virtual computer,
+      	constructing virtual computer chips using a basic HDL code. Additionally, I developed an assembler to
+        handle the machine code and a VM translator to enable higher-level programming on the computer. This
+        project was based on a lecture series.</p>
+      <a href="https://github.com/project">GitHub Repository</a>
+    </article>
+    <article>
+      <h3>Virtual Pet</h3>
+      <p>Description</p>
+      <a href="https://github.com/project">GitHub Repository</a>
+    </article>
+  </section>
+  
+  <section id="education">
+    <h2>Education</h2>
+    <article>
+      <h3>School</h3>
+      <p>Description</p>
+      <a href="https://github.com/your-project-repo">GitHub Repository</a>
+    </article>
+    <article>
+      <h3>Project 2</h3>
+      <p>Description</p>
+      <a href="http://reddit.com">GitHub Repository</a>
+    </article>
+  </section>
+
+  <footer>
+    <p>Hi, I'm a footer</p>
+  </footer>
 </body>
 </html>
