@@ -1,8 +1,8 @@
-body a:link {
+section a:link {
   color: red;
 }
 
-body a:visited {
+section a:visited {
   color: crimson;
 }
 
