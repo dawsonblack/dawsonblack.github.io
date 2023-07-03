@@ -3,9 +3,19 @@ body h1 {
   }
 section h2 {
     text-align: center;
-  }
+}
 section#about img {
     float: right;
     width: 200px;
     margin-left: 20px;
+}
+.top-bar {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+}
+.top-bar a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
 }
