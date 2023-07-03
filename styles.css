@@ -1,8 +1,8 @@
-a:link {
+body a:link {
   color: red; /* Change this value to the desired color for normal links */
 }
 
-a:visited {
+body a:visited {
   color: crimson; /* Change this value to the desired color for visited links */
 }
 
