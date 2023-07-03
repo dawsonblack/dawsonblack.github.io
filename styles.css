@@ -3,7 +3,7 @@ section a:link {
 }
 
 section a:visited {
-  color: crimson;
+  color: #9e143c;
 }
 
 body h1 {
@@ -22,7 +22,8 @@ section#about img {
   padding: 10px;
   text-align: center;
 }
-.top-bar a {
+.top-bar a:link,
+.top-bar a:visited {
   margin: 0 10px;
   text-decoration: none;
   color: #f2f2f2;
