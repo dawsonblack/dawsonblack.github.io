@@ -1,41 +1,45 @@
+body {
+  background-color: lightgray;
+}
+
+p {
+  max-width: 600px;
+}
+
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: #9e143c;
+}
+
 .top-bar {
   background-color: #000052;
   padding: 10px;
   text-align: center;
 }
+
 .top-bar a {
   margin: 0 10px;
   text-decoration: none;
   color: #f2f2f2;
 }
 
-section a:link {
-    color: red;
-}
-  
-section a:visited {
-    color: #9e143c;
-}
-  
-body h2 {
-      text-align: center;
-}
-
 #about {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  align-items: flex-start;
+}
 
+#projectsAndEducaton {
+  display: flex;
+  justify-content: center; /*This is not working for some reason*/
 }
 
 #about img {
-      width: 200px;
-      margin-left: 20px;
-}
-
-#bio {
-  margin: 0 auto;
-  max-width: 600px;
+  width: 200px;
+  margin-left: 20px;
 }
 
 footer {
