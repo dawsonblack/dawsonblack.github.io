@@ -1,30 +1,45 @@
-section a:link {
-  color: red;
-}
-
-section a:visited {
-  color: #9e143c;
-}
-
-body h1 {
-    text-align: center;
-  }
-section h2 {
-    text-align: center;
-}
-section#about img {
-    float: right;
-    width: 200px;
-    margin-left: 20px;
-}
 .top-bar {
   background-color: #000052;
   padding: 10px;
   text-align: center;
 }
-.top-bar a
-/*.top-bar a:visited*/ {
+.top-bar a {
   margin: 0 10px;
   text-decoration: none;
   color: #f2f2f2;
+}
+
+section a:link {
+    color: red;
+}
+  
+section a:visited {
+    color: #9e143c;
+}
+  
+body h2 {
+      text-align: center;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#about img {
+      width: 200px;
+      margin-left: 20px;
+}
+
+#bio {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+footer {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
 }
