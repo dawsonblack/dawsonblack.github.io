@@ -15,57 +15,59 @@
     </nav>
   </header>
 
-  <h2>About Me</h2>
-  <section class="flex-container" id="about">
-    <div><h3>Contact information:</h3>
-    <ul>
-      <li>Phone: <a href="tel:+13303109998">330-310-9998</a></li>
-      <li>Email: <a href="mailto:example@example.com">dawsonblack0816@gmail.com</a></li>
-      <li><a href="https://github.com/dawsonblack">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/dawson-black-624238281/">LinkedIn</a></li>
-    </ul>
-    <h3>Skills:</h3>
-    <ul>
-      <li>Front End Development (HTMl/CSS/Javascript)</li>
-      <li>Java</li>
-      <li>Spring</li>
-      <li>C++</li>
-      <li>Python</li>
-      <li>Lisp</li>
-    </ul></div>
-    <p id="bio">Hi! I'm Dawson, and I'm a Java software engineer with a background in physics.
+  <h2>About Me:</h2>
+  <section id="about">
+    <div id="bio">
+      <img src="pfp.jpg" alt="Dawson Black">
+      <p>Hi! I'm Dawson, and I'm a Java software engineer with a background in physics.
       I bring an analytical mindset and strong problem-solving abilities to the world of
       programming. My time at The Ohio State has given me significant experience collecting
       and reviewing empirical data, as well as working on computational physics problems.<br><br>
-      
+        
       If you're seeking a motivated software engineer with a background in science and a
       desire to make a meaningful impact, reach out! I'm eager to contribute my skills to a
       forward-thinking organization.</p>
-      <img src="pfp.jpg" alt="Dawson Black">
+    </div>
+    <div>
+      <h3>Skills:</h3>
+      <ul>
+        <li>Java</li>
+        <li>Spring</li>
+        <li>C++</li>
+        <li>Python</li>
+        <li>Lisp</li>
+        <li>HTML/CSS</li>
+        <li>Javascript</li>
+      </ul>
+    </div>
   </section>
 
-  <div class="flex-container" id="projectsAndEducation">
+  <h2>Projects:</h2>
   <section id="projects">
-    <h2>Projects</h2>
-    <article>
-      <h3><a href="https://github.com/dawsonblack/nand2tetris">Nand2Tetris</a></h3>
+    <a href="https://github.com/dawsonblack/nand2tetris" class="project">
+      <div class="project-text">
+      <h3>Nand2Tetris</h3>
       <p>Starting with nothing but nand gates, I built a fully operational 16-bit virtual computer,
       	constructing virtual computer chips using a basic HDL code.<br><br>
         Additionally, I wrote an assembler to
         handle the machine code and a VM translator to enable higher-level programming on the computer. This
-        project was based on a lecture series.<br><br><br></p>
-    </article>
-    <article>
-      <h3><a href="https://github.com/dawsonblack/virtual-pet">Virtual Pet Shelter</a></h3>
+        project was based on a lecture series.
+      </p>
+      </div>
+    </a>
+    <a href="https://github.com/dawsonblack/virtual-pet" class="project">
+      <div class="project-text">
+      <h3>Virtual Pet Shelter</h3>
       <p>Created shelters for different kinds of virtual pets: a robotic shelter for robotic cats and dogs, and an organic shelter for organic cats and dogs.<br><br>
         Each of the pets have a set of methods i.e. train, feed for organic pets, charge for robotic pets, play fetch for dogs, etc.
         This project showcases working knowledge of important features of Java and object-oriented programming such as encapsulation, inheritance, polymorphism, etc.
-        </p>
-    </article>
+      </p>
+      </div>
+    </a>
   </section>
   
+  <h2>Education:</h2>
   <section id="education">
-    <h2>Education</h2>
     <article>
       <h3>WeCanCodeIT</h3>
       <p>June 2023 - present</p>
@@ -75,10 +77,12 @@
       <p>2020-2023</p>
     </article>
   </section>
-  </div>
 
   <footer>
-    <p>Hi, I'm a footer</p>
+    <a href="tel:+13303109998">330.310.9998</a>
+    <a href="mailto:example@example.com">dawsonblack0816@gmail.com</a>
+    <a href="https://github.com/dawsonblack">GitHub</a>
+    <a href="https://www.linkedin.com/in/dawson-black-624238281/">LinkedIn</a>
   </footer>
 </body>
 </html>
