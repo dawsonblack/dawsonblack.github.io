@@ -76,3 +76,27 @@ footer a:visited {
   justify-content: center;
   gap: 20px;
 }
+
+#education img {
+  max-width: 200px;
+}
+
+article {
+  text-align: center;
+}
+
+article img:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.05); /* Increase the scale to make it react to the mouseover */
+}
+
+footer {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  margin: 20px;
+  text-decoration: none;
+}
