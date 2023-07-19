@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donut Clicker</title>
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="donut.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href = "mailto: dawsonblack0816@gmail.com">Contact</a></li>
+      </ul>
+    </nav>
+
+    <p id="count">Donuts: 0</p>
+
+    <img id="settings" src="images/settings-icon.PNG" alt="settings" onClick="openSettings()">
+    <div class="menu" id="settings-menu">
+      <div class="popup">
+        <h2>Settings</h2>
+        <input type="checkbox" id="playSound" checked>
+        <label for="myCheckbox">Play Sound Effect</label>
+        <br><br>
+        <button onClick="closeSettings()">Close</button>
+        <button onClick="promptReset()">Reset Progress</button>
+      </div>
+    </div>
+
+    <div class="menu" id="reset-prompt">
+      <div class="popup">
+        <p>Are you sure you want to reset? All progress will be lost.</p><br>
+        <button onClick="resetAll()">Yes, I'm Sure</button>
+        <button onClick="cancelReset()">Go Back</button>
+      </div>
+    </div>
+
+    <div class="upgrade">
+      <section id="upgrade-info">
+        <p id="clicker-upgrades">Clicker upgrades purchased: 0</p>
+        <p id="auto-clickers">Auto clickers purchased: 0</p>
+      </section>
+
+      <section id="upgrade-buttons">
+        <div class="button" onClick="upgradeClicker()">
+          <p class="button-text">Upgrade Clicker</p>
+          <img src="images/upgrade-button.png" class="button-image">
+        </div>
+        <div class="button" onClick="upgradeAutoClick()">
+          <p class="button-text">Upgrade Auto Clicker</p>
+          <img src="images/upgrade-button.png" class="button-image">
+        </div>
+      </section>
+    </div>
+
+    <div class="image-wrapper">
+      <img src="images/photo-donut.png" id="clicker-image" alt="donut" onmousedown="donutMouseDown()" onmouseup="donutMouseUp()" onClick="donutClicked()">
+    </div>
+  
+  <script src="donut.js"></script>
+  </body>
+</html>
