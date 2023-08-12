@@ -18,27 +18,51 @@
   <h2>About Me:</h2>
   <section id="about">
     <div id="bio">
-      <img src="pfp.jpg" alt="Dawson Black">
-      <p>Hi! I'm Dawson, and I'm a Java software engineer with a background in physics.
-      I bring an analytical mindset and strong problem-solving abilities to the world of
-      programming. My time at The Ohio State has given me significant experience collecting
-      and reviewing empirical data, as well as working on computational physics problems.<br><br>
-        
-      If you're seeking a motivated software engineer with a background in science and a
-      desire to make a meaningful impact, reach out! I'm eager to contribute my skills to a
-      forward-thinking organization.</p>
+      <p id="bio-text">I am a Java software engineer with a background in physics, and I bring an
+        analytical mindset and strong problem-solving abilities to the world of
+        programming. My time at The Ohio State has given me significant experience
+        collecting and reviewing empirical data, as well as working on computational
+        physics problems. <br><br>
+
+        Additionally, I am currently finishing a full-stack Java bootcamp where I
+        gained ample experience working both individually and with a team developing
+        complex, full stack applications. I am always striving to learn more about
+        whatever field I’m working in, and constantly looking for ways to improve upon
+        my work. With my drive and unique experience, I’m excited to contribute to a
+        team of like-minded software engineers.
+        </p>
+        <img src="portfolio_images/pfp.jpg" alt="Dawson Black">
     </div>
-    <div>
-      <h3>Skills:</h3>
-      <ul>
-        <li>Java</li>
-        <li>Spring</li>
-        <li>C++</li>
-        <li>Python</li>
-        <li>Lisp</li>
-        <li>HTML/CSS</li>
-        <li>Javascript</li>
-      </ul>
+  </section>
+
+  <h2>Skills:</h2>
+  <section id="skills">
+    <div class="skill-category">
+      <h3>Languages:</h3>
+      <div class="image-container">
+        <img src="portfolio_images/Java.jpg" alt="Java" title="Java">
+        <img src="portfolio_images/JavaScript.png" alt="JavaScript" title="JavaScript">
+        <img src="portfolio_images/HTML.png" alt="HTML" title="HTML">
+        <img src="portfolio_images/CSS.png" alt="CSS" title="CSS">
+        <img src="portfolio_images/C++.png" alt="C++" title="C++">
+        <img src="portfolio_images/Python.png" alt="Python" title="Python">
+        <img src="portfolio_images/Lisp.png" alt="Lisp" title="Lisp">
+      </div>
+    </div>
+    <div class="skill-category">
+      <h3>Frameworks:</h3>
+      <div class="image-container">
+        <img src="portfolio_images/Spring.png" alt="Spring" title="Spring">
+        <img src="portfolio_images/React.png" alt="React" title="React">
+      </div>
+    </div>
+    <div class="skill-category">
+      <h3>Tools:</h3>
+      <div class="image-container">
+        <img src="portfolio_images/VSCode.png" alt="Visual Studio" title="Visual Studio">
+        <img src="portfolio_images/Git.png" alt="Git/GitHub" title="Git/GitHub">
+        <img src="portfolio_images/mySQL.png" alt="mySQL" title="mySQL">
+      </div>
     </div>
   </section>
 
@@ -46,22 +70,46 @@
   <section id="projects">
     <a href="https://github.com/dawsonblack/nand2tetris" class="project">
       <div class="project-text">
-      <h3>Nand2Tetris</h3>
-      <p>Starting with nothing but nand gates, I built a fully operational 16-bit virtual computer,
-      	constructing virtual computer chips using a basic HDL code.<br><br>
-        Additionally, I wrote an assembler to
-        handle the machine code and a VM translator to enable higher-level programming on the computer. This
-        project was based on a lecture series.
-      </p>
+        <h3>Nand2Tetris (Lecture series)</h3>
+        <ul>
+          <li>
+            Developed a fully functional 16-bit virtual computer from scratch,
+            using only nand logic gates, resulting in a comprehensive
+            understanding of computer architecture.
+          </li>
+          <li>
+            Programmed an assembler to work with the computer’s CPU, as well
+            as a VM translator, which greatly expanded appreciation for
+            high-level programming language implementation.
+          </li>
+          <li>
+            Gained a bottom-up understanding of how computers work at all levels,
+            and how software can emerge from only hardware components.
+          </li>
+        </ul>
       </div>
     </a>
     <a href="https://github.com/dawsonblack/virtual-pet" class="project">
       <div class="project-text">
-      <h3>Virtual Pet Shelter</h3>
-      <p>Created shelters for different kinds of virtual pets: a robotic shelter for robotic cats and dogs, and an organic shelter for organic cats and dogs.<br><br>
-        Each of the pets have a set of methods i.e. train, feed for organic pets, charge for robotic pets, play fetch for dogs, etc.
-        This project showcases working knowledge of important features of Java and object-oriented programming such as encapsulation, inheritance, polymorphism, etc.
-      </p>
+        <h3>Virtual Pet Shelter</h3>
+        <ul>
+          <li>
+            Implemented distinct shelters for four kinds of virtual pets, including
+            a robotic shelter for robotic cats and dogs and an organic shelter for
+            organic cats and dogs. This both expanded knowledge of and demonstrated
+            skills with abstraction and inheritance.
+          </li>
+          <li>
+            Defined and implemented a comprehensive set of methods for each type of
+            pet, including training and feeding for organic pets, charging for
+            robotic pets, and enabling dogs to play fetch, showcasing a working
+            knowledge of encapsulation and polymorphism.
+          </li>
+          <li>
+            Demonstrated strong proficiency in Java and object-oriented programming
+            principles such as encapsulation, inheritance, polymorphism, and abstraction.
+          </li>
+        </ul>
       </div>
     </a>
   </section>
@@ -69,11 +117,11 @@
   <h2>Education:</h2>
   <section id="education">
     <article>
-      <a href="https://wecancodeit.org/"><img src="WCCI.png" alt="We Can Code IT"></a>
+      <a href="https://wecancodeit.org/"><img src="portfolio_images/WCCI.png" alt="We Can Code IT"></a>
       <p>June 2023 - present</p>
     </article>
     <article>
-      <a href="https://www.osu.edu/"><img src="tOSU.PNG" alt="The Ohio State University"></a>
+      <a href="https://www.osu.edu/"><img src="portfolio_images/tOSU.PNG" alt="The Ohio State University"></a>
       <p>2020-2023</p>
     </article>
   </section>
@@ -84,5 +132,32 @@
     <a href="https://github.com/dawsonblack">GitHub</a>
     <a href="https://www.linkedin.com/in/dawson-black-624238281/">LinkedIn</a>
   </footer>
+
+
+  <script>
+    const images = document.querySelectorAll('.image-container img');
+
+    images.forEach((img) => {
+      const popup = document.createElement('div');
+      popup.className = 'popup';
+      popup.textContent = img.getAttribute('title');
+      img.parentElement.appendChild(popup);
+
+      img.addEventListener('mouseover', (event) => {
+        const imgRect = img.getBoundingClientRect();
+        const offsetX = event.clientX - imgRect.left;
+        const offsetY = event.clientY - imgRect.top;
+
+        popup.style.left = offsetX + 'px';
+        popup.style.top = offsetY + 'px';
+        popup.style.display = 'block';
+      });
+
+      img.addEventListener('mouseout', () => {
+        popup.style.display = 'none';
+      });
+    });
+</script>
+
 </body>
 </html>
