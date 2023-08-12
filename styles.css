@@ -32,10 +32,11 @@ h2 {
 
 #bio {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: center;
   padding: 20px;
   flex: 1;
+  flex-wrap: wrap;
 }
 
 #bio-text {
