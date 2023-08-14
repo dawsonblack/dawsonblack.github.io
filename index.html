@@ -38,32 +38,69 @@
   <section id="skills">
     <div class="skill-category">
       <h3>Languages:</h3>
-      <div class="image-container">
-        <img src="portfolio_images/Java.jpg" alt="Java" title="Java">
-        <img src="portfolio_images/JavaScript.png" alt="JavaScript" title="JavaScript">
-        <img src="portfolio_images/HTML.png" alt="HTML" title="HTML">
-        <img src="portfolio_images/CSS.png" alt="CSS" title="CSS">
-        <img src="portfolio_images/C++.png" alt="C++" title="C++">
-        <img src="portfolio_images/Python.png" alt="Python" title="Python">
-        <img src="portfolio_images/Lisp.png" alt="Lisp" title="Lisp">
+      <div class="skill-container">
+        <div class="image-container">
+          <img src="portfolio_images/Java.jpg" alt="Java">
+          <p>Java</p>
+        </div>
+        <div class="image-container">
+          <img src="portfolio_images/JavaScript.png" alt="JavaScript">
+          <p>JavaScript</p>
+        </div>
+        <div class="image-container">
+          <img src="portfolio_images/HTML.png" alt="HTML">
+          <p>HTML</p>
+        </div>
+        <div class="image-container">
+          <img src="portfolio_images/CSS.png" alt="CSS">
+          <p>CSS</p>
+        </div>
+        <div class="image-container">
+          <img src="portfolio_images/C++.png" alt="C++">
+          <p>C++</p>
+        </div>
+        <div class="image-container">
+          <img src="portfolio_images/Python.png" alt="Python">
+          <p>Python</p>
+        </div>
+        <div class="image-container">
+          <img src="portfolio_images/Lisp.png" alt="Lisp">
+          <p>Lisp</p>
+        </div>
       </div>
     </div>
     <div class="skill-category">
       <h3>Frameworks:</h3>
-      <div class="image-container">
-        <img src="portfolio_images/Spring.png" alt="Spring" title="Spring">
-        <img src="portfolio_images/React.png" alt="React" title="React">
+      <div class="skill-container">
+        <div class="image-container">
+          <img src="portfolio_images/Spring.png" alt="Spring">
+          <p>Spring</p>
+        </div>
+        <div class="image-container">
+          <img src="portfolio_images/React.png" alt="React">
+          <p>React</p>
+        </div>
       </div>
     </div>
     <div class="skill-category">
       <h3>Tools:</h3>
-      <div class="image-container">
-        <img src="portfolio_images/VSCode.png" alt="Visual Studio" title="Visual Studio">
-        <img src="portfolio_images/Git.png" alt="Git/GitHub" title="Git/GitHub">
-        <img src="portfolio_images/mySQL.png" alt="mySQL" title="mySQL">
+      <div class="skill-container">
+        <div class="image-container">
+          <img src="portfolio_images/VSCode.png" alt="Visual Studio">
+          <p>Visual Studio</p>
+        </div>
+        <div class="image-container">
+          <img src="portfolio_images/Git.png" alt="Git/GitHub">
+          <p>Git/GitHub</p>
+        </div>
+        <div class="image-container">
+          <img src="portfolio_images/mySQL.png" alt="mySQL">
+          <p>mySQL</p>
+        </div>
       </div>
     </div>
   </section>
+  
 
   <h2>Projects:</h2>
   <section id="projects">
@@ -131,32 +168,5 @@
     <a href="https://www.linkedin.com/in/dawson-black-624238281/">LinkedIn</a>
     <a href="https://github.com/dawsonblack">GitHub</a>
   </footer>
-
-
-  <script>
-    const images = document.querySelectorAll('.image-container img');
-
-    images.forEach((img) => {
-      const popup = document.createElement('div');
-      popup.className = 'popup';
-      popup.textContent = img.getAttribute('title');
-      img.parentElement.appendChild(popup);
-
-      img.addEventListener('mouseover', (event) => {
-        const imgRect = img.getBoundingClientRect();
-        const offsetX = event.clientX - imgRect.left;
-        const offsetY = event.clientY - imgRect.top;
-
-        popup.style.left = offsetX + 'px';
-        popup.style.top = offsetY + 'px';
-        popup.style.display = 'block';
-      });
-
-      img.addEventListener('mouseout', () => {
-        popup.style.display = 'none';
-      });
-    });
-</script>
-
 </body>
 </html>
