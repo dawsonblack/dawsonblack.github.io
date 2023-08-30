@@ -18,6 +18,7 @@ section {
 
 #nav-bar {
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
   right: 0;
@@ -51,7 +52,7 @@ section {
   padding: 20px;
   border-radius: 5px;
 
-  margin-right: -5px; /* Reset top margin */
+  margin-right: -5px;
   z-index: -1;
   color: #333;
 }
@@ -67,7 +68,6 @@ section {
   #bio {
     margin-right: 0px;
     margin-top: -5px;
-    z-index: -1;
   }
 }
 
@@ -132,6 +132,11 @@ section {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.project:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
 .project-text {
   max-width: 400px;
   color: black;
@@ -139,11 +144,6 @@ section {
 
 .project-text ul li {
   margin-bottom: 10px;
-}
-
-.project:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .education-container {
