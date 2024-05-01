@@ -183,38 +183,6 @@ section {
   max-width: 500px;
 }
 
-
-
-
-
-
-
-
-/*#projects {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.project {
-  background-color: #b1e5f4;
-  border-radius: 50px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  margin: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.project-text {
-  max-width: 400px;
-  color: black;
-}*/
-
 .education-container {
   display: flex;
   flex-direction: column;
