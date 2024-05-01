@@ -45,7 +45,24 @@ section {
   color: #ffa500;
 }
 
+.scroll-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
 
+@media (max-width: 565px) {
+  #nav-link-container {
+    overflow: hidden;
+  }
+
+  .scroll-btn {
+    display: inline;
+  }
+}
 
 
 
@@ -58,14 +75,8 @@ section {
 }
 
 .scroll-btn {
-  display: none;
   margin: 20px 5px;
   transform: translateY(-50%);
-  background: none;
-  border: none;
-  color: white;
-  font-size: 20px;
-  cursor: pointer;
 }
 
 .prev {
@@ -89,10 +100,6 @@ section {
   #nav-bar a {
     display: inline-block;
     padding: 5px;
-  }
-
-  .scroll-btn {
-    display: block;
   }
 }*/
 
