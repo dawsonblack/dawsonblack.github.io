@@ -112,16 +112,6 @@ section {
   font-weight: bold;
 }
 
-.popup {
-  position: absolute;
-  display: none;
-  padding: 5px;
-  background-color: #333;
-  color: #fff;
-  border-radius: 3px;
-  font-size: 14px;
-}
-
 .work-experience-container {
   display: flex;
   flex-direction: column;
