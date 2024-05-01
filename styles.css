@@ -21,6 +21,10 @@ section {
 }
 
 #nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   z-index: 100;
   top: 0;
@@ -32,15 +36,85 @@ section {
   border-bottom: 2px solid #333;
 }
 
+#nav-link-container {
+  margin-left: -15px;
+  margin-right: -15px;
+  white-space: nowrap;
+}
+
 #nav-bar a {
   margin: 0 15px;
   color: #f2f2f2;
   transition: color 0.3s;
 }
-
 #nav-bar a:hover {
   color: #ffa500;
 }
+
+.scroll-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.prev {
+  margin-right: 15px;
+}
+
+.next {
+  margin-left: 15px;
+}
+
+@media (max-width: 565px) {
+  #nav-link-container {
+    overflow: hidden;
+  }
+
+  .scroll-btn {
+    display: inline;
+  }
+}
+
+
+
+/*
+
+.scroll-btn {
+  margin: 20px 5px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+@media (max-width: 565px) {
+  #nav-bar {
+    padding: 0;
+  }
+  
+  #nav-link-container {
+    width: 50%;
+    overflow: hidden;
+  }
+  
+  #nav-bar a {
+    display: inline-block;
+    padding: 5px;
+  }
+}*/
+
+
+
+
+
+
 
 #about {
   display: flex;
