@@ -275,12 +275,43 @@
       const nextButton = document.querySelector('.next');
       const navContainer = document.getElementById('nav-link-container');
 
+      function toggleScrollButtons() {
+        const screenWidthUnder565 = window.innerWidth < 565;
+        const canScrollLeft = navContainer.scrollLeft > 0;
+        const canScrollRight = navContainer.scrollLeft < navContainer.scrollWidth - navContainer.clientWidth;
+
+        if (screenWidthUnder565 && canScrollLeft) {
+          prevButton.style.display = 'inline';
+          prevButton.style.opacity = '1';
+        } else {
+          prevButton.style.display = 'inline';
+          prevButton.style.opacity = '0';
+        }
+
+        if (screenWidthUnder565 && canScrollRight) {
+          nextButton.style.display = 'inline';
+          nextButton.style.opacity = '1';
+        } else {
+          nextButton.style.display = 'inline';
+          nextButton.style.opacity = '0';
+        }
+
+        if (!screenWidthUnder565) {
+          prevButton.style.display = 'none';
+          nextButton.style.display = 'none';
+        }
+      }
+      toggleScrollButtons();
+
+      navContainer.addEventListener('scroll', toggleScrollButtons);
+      window.addEventListener('resize', toggleScrollButtons);
+
       prevButton.addEventListener('click', function() {
-        navContainer.scrollLeft -= 100; // Adjust scroll amount as needed
+        navContainer.scrollLeft -= 100;
       });
 
       nextButton.addEventListener('click', function() {
-        navContainer.scrollLeft += 100; // Adjust scroll amount as needed
+        navContainer.scrollLeft += 100;
       });
     });
   </script>
