@@ -37,10 +37,66 @@ section {
   color: #f2f2f2;
   transition: color 0.3s;
 }
-
 #nav-bar a:hover {
   color: #ffa500;
 }
+
+
+
+
+
+/*#nav-bar addons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.scroll-btn {
+  display: none;
+  margin: 20px 5px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+@media (max-width: 565px) {
+  #nav-bar {
+    padding: 0;
+  }
+  
+  #nav-link-container {
+    width: 50%;
+    overflow: hidden;
+  }
+  
+  #nav-bar a {
+    display: inline-block;
+    padding: 5px;
+  }
+
+  .scroll-btn {
+    display: block;
+  }
+}*/
+
+
+
+
+
+
 
 #about {
   display: flex;

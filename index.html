@@ -13,11 +13,15 @@
 <body>
   <header>
     <nav id="nav-bar">
-      <a href="#about-section">About Me</a>
-      <a href="#skills-section">Skills</a>
-      <a href="#work-experience-section">Work Experience</a>
-      <a href="#projects-section">Projects</a>
-      <a href="#education-section">Education</a>
+      <button class="scroll-btn prev">&lt;</button>
+      <div id="nav-link-container">
+        <a href="#about-section">About Me</a>
+        <a href="#skills-section">Skills</a>
+        <a href="#work-experience-section">Work Experience</a>
+        <a href="#projects-section">Projects</a>
+        <a href="#education-section">Education</a>
+      </div>
+      <button class="scroll-btn next">&gt;</button>
     </nav>
   </header>
 
@@ -264,5 +268,21 @@
     <a href="https://www.linkedin.com/in/dawson-black-624238281/">LinkedIn</a>
     <a href="https://github.com/dawsonblack">GitHub</a>
   </footer>
+
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+      const prevButton = document.querySelector('.prev');
+      const nextButton = document.querySelector('.next');
+      const navContainer = document.getElementById('nav-link-container');
+
+      prevButton.addEventListener('click', function() {
+        navContainer.scrollLeft -= 100; // Adjust scroll amount as needed
+      });
+
+      nextButton.addEventListener('click', function() {
+        navContainer.scrollLeft += 100; // Adjust scroll amount as needed
+      });
+    });
+  </script>
 </body>
 </html>
