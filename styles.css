@@ -118,6 +118,55 @@ section {
   font-size: 14px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+.work-experience-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px;
+  padding: 10px 20px 20px 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: 20px solid #4a90e2;
+}
+
+.work-experience-information h3 {
+  display: flex;
+  font-weight: normal;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.company-name {
+  font-weight: bold;
+}
+
+.work-experience-container ul {
+  max-width: 600px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 #projects {
   display: flex;
   justify-content: center;
@@ -143,7 +192,7 @@ section {
   color: black;
 }
 
-.project-text ul li {
+ul li {
   margin-bottom: 10px;
 }
 
