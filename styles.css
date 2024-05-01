@@ -78,44 +78,6 @@ section {
   }
 }
 
-
-
-/*
-
-.scroll-btn {
-  margin: 20px 5px;
-}
-
-.prev {
-  left: 10px;
-}
-
-.next {
-  right: 10px;
-}
-
-@media (max-width: 565px) {
-  #nav-bar {
-    padding: 0;
-  }
-  
-  #nav-link-container {
-    width: 50%;
-    overflow: hidden;
-  }
-  
-  #nav-bar a {
-    display: inline-block;
-    padding: 5px;
-  }
-}*/
-
-
-
-
-
-
-
 #about {
   display: flex;
   flex-direction: row-reverse;
