@@ -169,6 +169,16 @@ section {
   font-family: 'Open Sans', sans-serif;
 }
 
+@media (max-width: 445px) {
+  .work-experience-information h3 {
+    flex-direction: column;
+  }
+
+  .job-description-comma {
+    display: none;
+  }
+}
+
 .company-name {
   font-weight: bold;
 }
